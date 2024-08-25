@@ -31,7 +31,7 @@ class MatchControllerIT extends AbstractTestContainer {
 
     @Autowired
     private MatchRepository matchRepository;
-
+    // ObjectMapper is used to convert objects to JSON and vice versa
     @Autowired
     private ObjectMapper objectMapper;
 
