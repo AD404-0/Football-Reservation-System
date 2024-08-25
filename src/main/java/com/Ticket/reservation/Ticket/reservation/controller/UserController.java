@@ -41,6 +41,7 @@ public class UserController {
         return ResponseEntity.ok(users);
     }
 
+    // This method is used to update a user
     @DeleteMapping("/{userId}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long userId) {
         userService.deleteUser(userId);
