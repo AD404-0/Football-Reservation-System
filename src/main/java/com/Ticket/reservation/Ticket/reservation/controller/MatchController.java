@@ -18,7 +18,7 @@ import java.util.List;
 public class MatchController {
 
     private final MatchService matchService;
-
+// This class is used to handle requests related to matches
     @Autowired
     public MatchController(MatchService matchService) {
         this.matchService = matchService;
