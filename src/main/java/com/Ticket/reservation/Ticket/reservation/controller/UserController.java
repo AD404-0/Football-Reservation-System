@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 public class UserController {
-
+// This class is used to handle requests related to users
     private final UserService userService;
 
     @Autowired
