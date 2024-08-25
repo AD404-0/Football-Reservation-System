@@ -66,6 +66,7 @@ public class MatchController {
         return match != null ? ResponseEntity.ok(match) : ResponseEntity.notFound().build();
     }
 
+    // This method is used to delete a match
     @DeleteMapping("/{matchId}")
     public ResponseEntity<Void> deleteMatch(@PathVariable Long matchId) {
         if (matchId == null || matchId <= 0) {
