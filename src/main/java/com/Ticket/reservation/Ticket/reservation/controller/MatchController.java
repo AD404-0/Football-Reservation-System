@@ -24,6 +24,7 @@ public class MatchController {
         this.matchService = matchService;
     }
 
+    // This method is used to create a new match
     @PostMapping
     public ResponseEntity<Match> createMatch(@RequestBody @Valid Match match) {
         try {
