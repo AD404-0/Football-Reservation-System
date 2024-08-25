@@ -48,6 +48,7 @@ public class MatchController {
         return futureMatches.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(futureMatches);
     }
 
+    // This method is used to get matches by team
     @GetMapping("/team/{teamName}")
     public ResponseEntity<List<Match>> getMatchesByTeam(@PathVariable String teamName) {
         if (teamName == null || teamName.trim().isEmpty()) {
