@@ -26,12 +26,14 @@ public class TicketController {
         return ResponseEntity.ok(createdTicket);
     }
 
+    // This method is used to get all tickets
     @GetMapping("/match/{matchId}")
     public ResponseEntity<List<Ticket>> getTicketsForMatch(@PathVariable Long matchId) {
         List<Ticket> tickets = ticketService.getTicketsForMatch(matchId);
         return ResponseEntity.ok(tickets);
     }
 
+    // This method is used to get all available tickets
     @GetMapping("/match/{matchId}/available")
     public ResponseEntity<List<Ticket>> getAvailableTicketsForMatch(@PathVariable Long matchId) {
         List<Ticket> availableTickets = ticketService.getAvailableTicketsForMatch(matchId);
