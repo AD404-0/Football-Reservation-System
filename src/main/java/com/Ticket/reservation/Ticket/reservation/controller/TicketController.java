@@ -40,6 +40,7 @@ public class TicketController {
         return ResponseEntity.ok(availableTickets);
     }
 
+    // This method is used to get a ticket by its ID
     @GetMapping("/{ticketId}")
     public ResponseEntity<Ticket> getTicketById(@PathVariable Long ticketId) {
         Ticket ticket = ticketService.getTicketById(ticketId);
