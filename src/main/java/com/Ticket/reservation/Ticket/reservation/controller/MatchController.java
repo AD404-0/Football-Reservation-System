@@ -35,6 +35,7 @@ public class MatchController {
         }
     }
 
+    // This method is used to get all matches
     @GetMapping
     public ResponseEntity<List<Match>> getAllMatches() {
         List<Match> matches = matchService.getAllMatches();
