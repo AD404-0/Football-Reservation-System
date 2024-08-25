@@ -41,7 +41,7 @@ public class MatchController {
         List<Match> matches = matchService.getAllMatches();
         return matches.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(matches);
     }
-
+// This method is used to get future matches
     @GetMapping("/future")
     public ResponseEntity<List<Match>> getFutureMatches() {
         List<Match> futureMatches = matchService.getFutureMatches();
