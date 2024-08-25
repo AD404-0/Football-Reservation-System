@@ -55,6 +55,7 @@ public class Match {
         this.id = id;
     }
 
+    // Getters and Setters
     public String getHomeTeam() {
         return homeTeam;
     }
