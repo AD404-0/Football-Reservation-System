@@ -37,6 +37,7 @@ class MatchControllerIT extends AbstractTestContainer {
 
     private Match testMatch;
 
+    // This method is executed before each test method
     @BeforeEach
     void setUp() {
         matchRepository.deleteAll();
