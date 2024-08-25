@@ -17,7 +17,7 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
-
+// This method is used to register a new user
     @PostMapping("/register")
     public ResponseEntity<User> registerUser(@RequestBody User user) {
         try {
@@ -27,7 +27,7 @@ public class UserController {
             return ResponseEntity.badRequest().body(null);
         }
     }
-
+// This method is used to get a user by their username
     @GetMapping("/{username}")
     public ResponseEntity<User> getUserByUsername(@PathVariable String username) {
         return userService.findUserByUsername(username)
